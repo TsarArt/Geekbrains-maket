@@ -1334,6 +1334,7 @@ header {
   color: #c7b299; }
 
 @media (max-width: 480px) {
+  width: 100%;
   header {
     background-size: cover; }
 
