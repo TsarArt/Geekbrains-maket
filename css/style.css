@@ -1,4 +1,8 @@
 @import url(../fonts/stylesheet.css);
+body {
+  outline: none;
+  overflow-x: hidden; }
+
 header {
   width: 100%;
   background-image: url("../img/photo.png");
@@ -1027,6 +1031,10 @@ header {
   background: transparent;
   fill: #d1d1d1; }
 
+.main-recent-posts-arrow-button {
+  width: 22px;
+  height: 22px; }
+
 .main-recent-posts-buttons-button:hover {
   fill: #c7b299; }
 
@@ -1333,9 +1341,9 @@ header {
 .bottom-footer-ul-li:hover .bottom-footer-ul-li-a {
   color: #c7b299; }
 
-@media (max-width: 480px) {
-  width: 100%;
+@media (max-width: 576px) {
   header {
+    width: 100%;
     background-size: cover; }
 
   .header {
@@ -1364,6 +1372,9 @@ header {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
+
+  .cart-search {
+    display: none; }
 
   .header-other-part {
     display: none; }
@@ -1532,6 +1543,9 @@ header {
         flex-flow: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+
+  .bottom-footer-ul-li-vert-hr {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

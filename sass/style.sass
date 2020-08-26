@@ -3,6 +3,9 @@ $fontMontserrat: 'montserrat', sans-serif
 $fontRaleway: 'raleway', sans-serif
 $fontRoboto: "roboto", sans-serif
 $mainWidth: 1170px
+body
+    outline: none
+    overflow-x: hidden
 header
     width: 100%
     background-image: url("../img/photo.png")
@@ -670,6 +673,9 @@ header
     border: none
     background: transparent
     fill: #d1d1d1
+.main-recent-posts-arrow-button
+    width: 22px
+    height: 22px
 .main-recent-posts-buttons-button:hover
     fill: #c7b299
 .main-recent-posts-buttons-button:active
@@ -862,9 +868,9 @@ header
     color: #555555
 .bottom-footer-ul-li:hover .bottom-footer-ul-li-a
     color: #c7b299
-@media (max-width: 480px)
-    width: 100%
+@media (max-width: 576px)
     header
+        width: 100%
         background-size: cover
     .header
         height: 100px
@@ -882,6 +888,8 @@ header
                 display: flex
                 flex-flow: column
                 align-items: center
+    .cart-search
+        display: none
     .header-other-part
         display: none
     .header-center-items
@@ -980,3 +988,5 @@ header
         display: flex
         flex-flow: wrap
         justify-content: center
+    .bottom-footer-ul-li-vert-hr
+        display: none
